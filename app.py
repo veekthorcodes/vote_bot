@@ -23,7 +23,7 @@ PATH = "chromedriver_linux64/chromedriver"
 driver = webdriver.Chrome(PATH)
 
 # change n to the number of iterations you want the script to run for
-n = 1000
+n = 100000
 
 for _ in range(n):
   print(f"Entry {_ + 1} out of {n}")
