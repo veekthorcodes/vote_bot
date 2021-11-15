@@ -22,13 +22,13 @@ PATH = "chromedriver_linux64/chromedriver"
 
 driver = webdriver.Chrome(PATH)
 
-# change n to the number of iterations you want the script to run for
-n = 10000
 site1 = "https://docs.google.com/forms/d/e/1FAIpQLSeGFt4pGHqHOYLEAJfii4JbYocUDP2k2znA7j5QMOErCU3yMw/viewform"
 
 site2 = "https://docs.google.com/forms/d/e/1FAIpQLScXislPAGq__ra1ukydmqUuwcluo0spcIrk_eqvC3cLKRegBw/viewform"
 
 
+# change n to the number of iterations you want the script to run for
+n = 100000
 
 for _ in range(n):
   print(f"Entry {_ + 1} out of {n}")
