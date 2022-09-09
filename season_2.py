@@ -17,13 +17,15 @@ warnings.filterwarnings("ignore")  # ignore warnings
 PATH = "chromedriver_linux64/chromedriver"
 driver = webdriver.Chrome(PATH)
 
-SITE = "https://docs.google.com/forms/d/e/1FAIpQLSf8iqzLxBVQHzHeW15bmb2sbxaO4W6Qkbo2-wknTzWo92Re-Q/viewform"
+SITE_OLD = "https://docs.google.com/forms/d/e/1FAIpQLSf8iqzLxBVQHzHeW15bmb2sbxaO4W6Qkbo2-wknTzWo92Re-Q/viewform"
+SITE = "https://docs.google.com/forms/d/e/1FAIpQLSe3YI_5g4_KsLeMlyEjZN1hv194afpWtBDUNzhSbnep13F-rg/viewform?usp=pp_url&entry.1258404478=Option+1"
 EMAIL = "veekthorcodes1@gmail.com"
 
 contestants_map = {
-    "INIYE": "//div[@id='i18']",
-    "MR. KINGZO": "//div[@id='i42']",
-    "MR. LEGEND": "//div[@id='i58']",
+    # "INIYE": "//div[@id='i18']",
+    # "MR. KINGZO": "//div[@id='i42']",
+    # "MR. LEGEND": "//div[@id='i58']",
+    "JOKER": "//div[@id='i18']",
 }
 number_of_votes = 1000 # change number_of_votes to the number of iterations you want the script to run for
 
