@@ -7,7 +7,7 @@
   it should be a zip file, just unzip it and replace the chromedriver folder in this directory with the one you downloaded.
 
 """
-# from selenium.webdriver.support import expected_conditions as EC
+
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 import warnings
@@ -27,7 +27,7 @@ contestants_map = {
     # "MR. LEGEND": "//div[@id='i58']",
     "JOKER": "//div[@id='i18']",
 }
-number_of_votes = 1000 # change number_of_votes to the number of iterations you want the script to run for
+number_of_votes = 3000 # change number_of_votes to the number of iterations you want the script to run for
 
 for n in range(number_of_votes):
     print(f"* vote number [{n + 1}] out of [{number_of_votes}] estimated votes *\n")
@@ -35,7 +35,7 @@ for n in range(number_of_votes):
     driver.get(SITE)
 
     print("Entering Email...\n")
-    driver.find_element(By.XPATH, "//input[@type='email']").send_keys(EMAIL)
+    driver.find_element(By.XPATH, "//input[@type='email']").send_keys(EMAIL) 
 
 
     for contestant, xpath in contestants_map.items():
@@ -51,6 +51,8 @@ for n in range(number_of_votes):
     # submit the form
     driver.find_element(By.XPATH, "//div[@class='uArJ5e UQuaGc Y5sE8d VkkpIf QvWxOd']").click()
     print("vvv SUBMITTED vvv.\n\n")
-    time.sleep(1)
+    time.sleep(3)
 
 driver.quit()
+
+# to run the script in the terminal, type: python3 season_2.py
