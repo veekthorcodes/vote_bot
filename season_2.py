@@ -51,7 +51,7 @@ for n in range(number_of_votes):
     # submit the form
     driver.find_element(By.XPATH, "//div[@class='uArJ5e UQuaGc Y5sE8d VkkpIf QvWxOd']").click()
     print("vvv SUBMITTED vvv.\n\n")
-    time.sleep(3)
+    # time.sleep(3)
 
 driver.quit()
 
